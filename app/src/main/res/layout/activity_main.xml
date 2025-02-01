@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="#D4BEBE"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="BMI\nCALCULATOR"
+        android:textColor="#000000"
+        android:textSize="48sp"
+        android:textStyle="bold"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="49dp"
+        >
+
+        <EditText
+            android:id="@+id/editwt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="@string/wt"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edithtF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="@string/htF"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/edithtI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="14"
+            android:hint="@string/htI"
+            android:inputType="number"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Calculate BMI" />
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:text="Result"
+            android:textStyle="bold"
+            android:textSize="48sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
